@@ -1,25 +1,37 @@
-# 💰 Sistema Bancário em Python
+# 💳 Sistema Bancário - Versão bancoV3 (POO)
 
-Este é um projeto desenvolvido como parte do desafio da Formação Python oferecida pela [DIO - Digital Innovation One](https://www.dio.me/). O objetivo é implementar um sistema bancário simples com as operações de saque, depósito e visualização de extrato.
+Este projeto simula um sistema bancário simples utilizando **Programação Orientada a Objetos (POO)** em Python. Ele foi desenvolvido como exercício prático para consolidar os conceitos de classes, herança, encapsulamento e polimorfismo.
 
-## 🚀 Funcionalidades
+---
 
-- [x] **Depósito** com validação de valor positivo
-- [x] **Saque** com:
-  - Limite de valor por saque (R$ 500)
-  - Limite de 3 saques diários
-  - Verificação de saldo suficiente
-- [x] **Extrato** com listagem de todas as transações
-- [x] Interface no terminal (linha de comando)
+## 📌 Funcionalidades
 
-## 🛠️ Tecnologias utilizadas
+- Criar usuários (clientes pessoas físicas)
+- Criar contas bancárias do tipo corrente
+- Realizar depósitos
+- Realizar saques com regras de limite e quantidade
+- Exibir extrato da conta
+- Listar contas cadastradas
 
-- Python 3.x
-- VS Code
-- Git e GitHub
+---
 
-## ▶️ Como executar o projeto
+## 🧱 Modelo de Classes (UML)
+
+O sistema foi modelado com as seguintes classes:
+
+- `Cliente` (classe base)
+- `PessoaFisica` (herda de `Cliente`)
+- `Conta` (classe base)
+- `ContaCorrente` (herda de `Conta`)
+- `Transacao` (abstrata)
+  - `Deposito` e `Saque` (herdam de `Transacao`)
+- `Historico` (armazena transações de uma conta)
+
+---
+
+## 🖥️ Como utilizar
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Rogerio99ga/sistema-bancario-python.git
+   git clone https://github.com/seu-usuario/sistema-bancario.git
+   cd sistema-bancario
